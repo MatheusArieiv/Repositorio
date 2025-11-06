@@ -1,0 +1,31 @@
+# Projeto integrado 2025 - Matheus Vieira Ponte Lima
+
+INICIO
+    # Cria fila de pacientes
+    CRIAR fila = vazia
+
+    ESCREVER "== CADASTRO DE PACIENTES =="
+
+    # Insere 3 pacientes na fila
+    PARA i DE 1 ATÉ 3 FAÇA
+        ESCREVER "Digite o nome do paciente ", i, ":"
+        LER nome
+
+        ESCREVER "Digite o CPF do paciente ", i, ":"
+        LER cpf
+
+        INSERIR (nome, cpf) NO FINAL DA fila
+    FIMPARA
+
+    # Mostra a fila completa
+    ESCREVER "Fila de pacientes cadastrada:"
+    MOSTRAR fila
+
+    # Remove o primeiro paciente para atendimento
+    ESCREVER "Atendendo o primeiro paciente da fila."
+    REMOVER o primeiro elemento DA fila
+
+    # Mostrar quem ainda está na fila
+    ESCREVER "Pacientes que ainda estão na fila:"
+    MOSTRAR fila
+FIM
